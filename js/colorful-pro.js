@@ -1089,7 +1089,7 @@ class ColorfulProApp {
     }
 
     generateCSSCode() {
-        let css = `/* カラフラ Pro - 生成パレット */\n:root {\n`;
+        let css = `/* カラフラ - 生成パレット */\n:root {\n`;
         this.currentColors.forEach((color, index) => {
             css += `  --color-${index + 1}: ${color.hex}; /* ${color.percentage}% */\n`;
         });
@@ -1143,7 +1143,7 @@ class ColorfulProApp {
 
     generateAdobeASE() {
         // Adobe ASE形式は複雑なバイナリ形式のため、簡易版として色情報をテキストで出力
-        const aseText = `Adobe Swatch Exchange (簡易版)\nカラフラ Pro - 生成パレット\n\n` +
+        const aseText = `Adobe Swatch Exchange (簡易版)\nカラフラ - 生成パレット\n\n` +
             this.currentColors.map((color, index) => {
                 const [r, g, b] = color.rgb;
                 return `Color ${index + 1}\nName: color-${index + 1}\nHex: ${color.hex}\nRGB: ${r}, ${g}, ${b}\nPercentage: ${color.percentage}%\n`;
