@@ -116,7 +116,7 @@ self.addEventListener('push', (event) => {
     console.log('[SW] Push event received');
     
     const options = {
-        body: event.data ? event.data.text() : 'カラフラ Pro からお知らせがあります',
+        body: event.data ? event.data.text() : 'カラフラ からお知らせがあります',
         icon: '/icon-192.png',
         badge: '/badge-72.png',
         vibrate: [100, 50, 100],
@@ -139,7 +139,7 @@ self.addEventListener('push', (event) => {
     };
     
     event.waitUntil(
-        self.registration.showNotification('カラフラ Pro', options)
+        self.registration.showNotification('カラフラ', options)
     );
 });
 
