@@ -1,4 +1,4 @@
-# カラフラ Pro - 高機能カラーパレット生成ツール
+# カラフラ - 高機能カラーパレット生成ツール
 
 ![カラフラ Pro](https://img.shields.io/badge/Version-Pro-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
