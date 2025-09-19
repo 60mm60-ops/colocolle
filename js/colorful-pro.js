@@ -1051,7 +1051,7 @@ class ColorfulProApp {
                     break;
             }
             
-            this.downloadCanvas(canvas, `colorful-pro-palette-${Date.now()}.png`);
+            this.downloadCanvas(canvas, `colorful-palette-${Date.now()}.png`);
             this.showNotification('パレット画像を保存しました', 'success');
             
         } catch (error) {
@@ -1084,7 +1084,7 @@ class ColorfulProApp {
                 return;
         }
 
-        this.downloadText(code, `colorful-pro-palette.${format}`, `text/${format === 'json' ? 'json' : 'plain'}`);
+        this.downloadText(code, `colorful-palette.${format}`, `text/${format === 'json' ? 'json' : 'plain'}`);
         this.showNotification(`${format.toUpperCase()}形式でコードを書き出しました`, 'success');
     }
 
@@ -1149,7 +1149,7 @@ class ColorfulProApp {
                 return `Color ${index + 1}\nName: color-${index + 1}\nHex: ${color.hex}\nRGB: ${r}, ${g}, ${b}\nPercentage: ${color.percentage}%\n`;
             }).join('\n');
         
-        this.downloadText(aseText, 'colorful-pro-palette.ase.txt', 'text/plain');
+        this.downloadText(aseText, 'colorful-palette.ase.txt', 'text/plain');
         this.showNotification('Adobe ASE情報を書き出しました', 'success');
     }
 
